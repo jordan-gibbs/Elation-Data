@@ -1,0 +1,78 @@
+Type,Variable Name,Question,Scoring
+Influencer,Belonging in Organization,I feel I belong in my organization.,1
+Influencer,Healthy Workplace Relationships,"I have trustworthy, reliable, and caring relationships with my co-workers.",1
+Influencer,Inclusive Leadership,My manager/supervisor considers everyone's input on the team before making decisions.,1
+Influencer,Job Autonomy,I am satisfied with the amount of freedom and independence I have when doing my job.,0.5
+Influencer,Job Autonomy,I am satisfied with the amount of discretion I have when doing my job.,0.5
+Influencer,Job Crafting,I have control to change and adapt how I do my job as I see fit.,0.5
+Influencer,Job Crafting,I am satisfied with the level of freedom and discretion to change and adapt my job to better suit my personal needs.,0.5
+Influencer,Job Security,I believe my current employment is secure into the foreseeable future.,1
+Influencer,Job Significance,I feel the work I do makes a difference in the world.,0.5
+Influencer,Job Significance,I feel the work I do makes a difference in the lives of others.,0.5
+Influencer,Leadership Feedback Style,My manager/supervisor gives me constructive feedback if I do not perform well.,0.5
+Influencer,Leadership Feedback Style,My manager/supervisor gives me positive feedback if I perform well.,0.5
+Influencer,Opportunities for Advancement,My organization prefers to hire from outside rather than promote from within.,0.5
+Influencer,Opportunities for Advancement,"Based on my education and experience, I am satisfied with the opportunities for advancement that my organization offers.",0.5
+Influencer,Reward or Compensation Satisfaction,"Considering my qualifications and experience, I am compensated fairly.",0.5
+Influencer,Reward or Compensation Satisfaction,I feel fairly compensated considering what others in my organization and in the wider job market are being paid.,0.5
+Influencer,Scheduling Control,My schedule is entirely dependent on what the organization's needs are.,0.5
+Influencer,Scheduling Control,I have control over my work schedule.,0.5
+Influencer,Social Support at Work,I consider some of my co-workers as friends.,0.5
+Influencer,Social Support at Work,I can confide in my co-workers when I need to.,0.5
+Influencer,Work Knowledge Acquisition,I struggle to find time to keep up to date with the latest developments in my field of work.,0.5
+Influencer,Work Knowledge Acquisition,I am actively making time to study or learn more about my field of work.,0.5
+Influencer,Work-Life Balance,I have a healthy balance between my work and personal life.,1
+Influencer,Workload,I have too much work to do and struggle to keep up.,1
+Influencer,Value Alignment,My values are aligned with that of my organization.,1
+Influencer,Time for Leisure,I have time/make time for leisure activities each day.,1
+Influencer,Charity,I have a desire to help those less fortunate and take tangible action to do so.,0.5
+Influencer,Charity,I am able to sacrifice personal comforts for the benefit of others less fortunate.,0.5
+Influencer,Cognitive Empathy,I can recognize and understand why others are feeling the way they are.,0.5
+Influencer,Cognitive Empathy,I struggle to recognize and understand the emotions someone else is experiencing fully.,0.5
+Influencer,Dietary Quality,"To the best of my knowledge, my diet is balanced (e.g., a good mix of multiple food groups).",1
+Influencer,Emotional Empathy,I can accurately identify and name the emotions of others.,0.3333333333
+Influencer,Emotional Empathy,I am able to imagine what others are feeling.,0.3333333333
+Influencer,Emotional Empathy,I can feel what others feel by identifying what they are going through.,0.3333333333
+Influencer,Gratitude,I am thankful for the things in my life that I have.,0.5
+Influencer,Gratitude,I often think or dream of things I do not have.,0.5
+Influencer,Healthy Personal Relationships,"I have trustworthy, reliable, and loving relationships with my family.",0.5
+Influencer,Healthy Personal Relationships,"I have trustworthy, reliable, and loving relationships with my friends.",0.5
+Influencer,Knowledge Desire and Curiosity,I am actively seeking out situations where I can grow my knowledge.,0.5
+Influencer,Knowledge Desire and Curiosity,I am curious and stimulated by certain fields/topics outside of my profession.,0.5
+Influencer,Mindfulness Practice,Do you have a daily or regular routine of any form of a mindfulness or meditation practice?,1
+Influencer,Regular Meal Energy,How many times a day do you eat?,0.5
+Influencer,Regular Meal Energy,"Do you eat at equally dispersed intervals? e.g., 4 hours apart?",0.5
+Influencer,Sleep Pattern Consistency,"Do you get up at the same time each morning, even if you do not have to work?",0.3333333333
+Influencer,Sleep Pattern Consistency,"Do you go to bed at the same time each night, even if you do not have to work the next day?",0.3333333333
+Influencer,Sleep Pattern Consistency,Do you get up immediately after your first alarm? (as opposed to snoozing).,0.3333333333
+Influencer,Sleep Quality,I fall asleep easily.,0.25
+Influencer,Sleep Quality,I tend to wake up during the night and can't fall back to sleep again.,0.25
+Influencer,Sleep Quality,I find it challenging to get up in the mornings.,0.25
+Influencer,Sleep Quality,I feel well-rested and refreshed in the mornings.,0.25
+Influencer,Workout Balance,"Do you believe your exercise routine incorporates a good balance of the typical types of exercise? (e.g., cardio, strength).",1
+Influencer,Workout Frequency and length,How many times a week do you exercise?,0.5
+Influencer,Workout Frequency and length,"On average, how long are your exercise sessions?",0.5
+Outcome,Intent to Stay,I have been thinking about/planning on leaving my employer.,1
+Outcome,Job Engagement,I get excited about doing my job.,0.25
+Outcome,Job Engagement,My working day goes by fast.,0.25
+Outcome,Job Engagement,"I get immersed while doing my job, forgetting about time and other worries.",0.25
+Outcome,Job Engagement,I am proud of the work I do.,0.25
+Outcome,Job Satisfaction,I am satisfied with my job.,1
+Outcome,Wellbeing/Performance Potential,I am enthusiastic about my work.,0.078634
+Outcome,Wellbeing/Performance Potential,I feel a sense of dread/disdain when I think about my job.,0.087726
+Outcome,Wellbeing/Performance Potential,I feel powerless over my own life.,0.079002
+Outcome,Wellbeing/Performance Potential,I feel uncertain and anxious about what the future holds.,0.073965
+Outcome,Wellbeing/Performance Potential,I have a negative outlook on the future.,0.078019
+Outcome,Wellbeing/Performance Potential,I struggle to relax when I have time to do so.,0.04632
+Outcome,Wellbeing/Performance Potential,I tend to worry about the future more than before.,0.064136
+Outcome,Wellbeing/Performance Potential,My life has meaning and a purpose.,0.072613
+Outcome,Wellbeing/Performance Potential,"When doing my work, I feel cheerful and happy.",0.091043
+Outcome,Wellbeing/Performance Potential,"When doing my work, I feel mentally fatigued or exhausted.",0.08404
+Outcome,Wellbeing/Performance Potential,"When doing my work, I find remaining energized and motivated difficult.",0.076176
+Outcome,Wellbeing/Performance Potential,"When doing my work, I get irritated/agitated more than usual.",0.083303
+Outcome,Wellbeing/Performance Potential,"When I wake up, I feel ready to take on the day.",0.085023
+Workplace Culture,Employee Trust,My co-workers trust in me and each other.,See gdoc
+Workplace Culture,Empowered,I am empowered to investigate problems and explore new ideas at work.,See gdoc
+Workplace Culture,Fairness,"In my area, employees are treated fairly.",See gdoc
+Workplace Culture,Leader Respect,Our leaders treat staff with respect.,See gdoc
+Workplace Culture,Staff Respect,Staff treat each other with respect.,See gdoc
