@@ -1,5 +1,12 @@
 import streamlit as st
+import numpy as np
 import pandas as pd
+from report_data_parse import create_xlsx_report
+import doc_creator3
+import tempfile
+from workplace_culture import create_culture_report, create_glossary_pdf, subgroup_table, merge_pdfs
+from Data_Reliability import calculate_response_reliability_index, calculate_statistical_deviation_score
+
 
 if 'demo' not in st.session_state:
     st.session_state['demo'] = None
@@ -130,6 +137,24 @@ if demographics_file and raw_data_file:
 
     # Proceed with extracting the final layout
     final_df = merged_df[final_layout_columns]
+
+        raw_data_df.rename(columns={'respondentId': 'userId'}, inplace=True)
+
+    # Calculate the Response Reliability Index using raw_data_df
+    raw_data_df = calculate_response_reliability_index(raw_data_df)
+
+    raw_data_df = calculate_statistical_deviation_score(raw_data_df)
+
+    # Append the new columns to final_df
+    final_df = final_df.merge(raw_data_df[['userId', 'Response Reliability Index', 'Social Desirability Score', 'Absolute Z-score', 'Above 95% threshold']],
+                              on='userId', how='left')
+
+    final_df['Valid Response'] = np.where(
+        ((final_df['Response Reliability Index'] <= 6).astype(int) +
+         (final_df['Social Desirability Score'] <= 50).astype(int) +
+         (final_df['Above 95% threshold'] == 'Yes').astype(int)) >= 2,
+        'No', 'Yes'
+    )
 
     # Round all values to the nearest whole number
     final_df = final_df.round()
