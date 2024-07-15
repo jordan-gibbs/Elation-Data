@@ -138,7 +138,7 @@ if demographics_file and raw_data_file:
     # Proceed with extracting the final layout
     final_df = merged_df[final_layout_columns]
 
-        raw_data_df.rename(columns={'respondentId': 'userId'}, inplace=True)
+    raw_data_df.rename(columns={'respondentId': 'userId'}, inplace=True)
 
     # Calculate the Response Reliability Index using raw_data_df
     raw_data_df = calculate_response_reliability_index(raw_data_df)
