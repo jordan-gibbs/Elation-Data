@@ -117,7 +117,6 @@ if demographics_file and raw_data_file:
     # Replace the userId column with respondentId (renamed to userId)
     merged_df['userId'] = merged_df['respondentId']
 
-
     # Create the list of final layout columns, including all columns from final_layout_df
     final_layout_columns = list(final_layout_df.columns)
 
@@ -143,18 +142,22 @@ if demographics_file and raw_data_file:
     raw_data_df = calculate_statistical_deviation_score(raw_data_df)
 
     # Append the new columns to final_df
-    final_df = final_df.merge(raw_data_df[['userId', 'Response Reliability Index', 'Social Desirability Score', 'Absolute Z-score', 'Above 95% threshold']],
+    final_df = final_df.merge(raw_data_df[['userId', 'Response Reliability Index', 'Social Desirability Score', 'Absolute Z-score', 'Z-score Anomaly Count', 'Above 95% threshold']],
                               on='userId', how='left')
 
     final_df['Valid Response'] = np.where(
-        ((final_df['Response Reliability Index'] <= 6).astype(int) +
-         (final_df['Social Desirability Score'] <= 50).astype(int) +
-         (final_df['Above 95% threshold'] == 'Yes').astype(int)) >= 2,
+        ((final_df['Response Reliability Index'] <= 6).astype(float) +
+         ((final_df['Response Reliability Index'] > 6) & (final_df['Response Reliability Index'] <= 7)).astype(
+             float) * 0.5 +
+         (final_df['Social Desirability Score'] <= 50).astype(float) +
+         ((final_df['Social Desirability Score'] > 50) & (final_df['Social Desirability Score'] <= 65)).astype(
+             float) * 0.5 +
+         (final_df['Above 95% threshold'] == 'Yes').astype(float)) * 1.5 >= 2,
         'No', 'Yes'
     )
 
     # Round all values to the nearest whole number
-    final_df = final_df.round()
+    final_df = final_df.round(2)
 
     # Download link for the final dataframe
     csv = final_df.to_csv(index=False).encode('utf-8')
